@@ -1,5 +1,8 @@
-this is a test
-#Markdown H1 tag in the index file
----
-- markdown list test
----
+<!DOCTYPE html>
+<html>
+  <body>
+    <H3> just testing my memory </H3>
+    <p> this is a test </p>
+    
+  </body>
+</html>
