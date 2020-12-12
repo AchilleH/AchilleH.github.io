@@ -3,25 +3,53 @@
   <head>
     <!-- just like the header file, provides extra preset source material to construct the webpage -->
     <meta charset ="utf-8">
-    <!-- GMK 9009 Colors (random samples from renders)
-    white: e0dace
-    Modifiers: b5ad98
-    constrast:(g)839c7f (r)d38882
-    text: 2c2c2a
+    <!-- GMK 9009 Colors
+    alphas: L9 -> #d8d2c3
+    Modifiers: U9 -> #aca693
+    Green: 3B -> #768e72
+    Red: 3C -> #c87e74
+    Legends: CR -> #171718
     -->
     <style>
+    /* GLOBAL TAGS */
       body {
-        background-color: #dfd9cd;
+        background-color: #d8d2c3;
       }
       p {
-        color: #2c2c2a;
+        color: #171718;
+      }
+      span {
+        color: #c87e74
+      }
+    /* CLASS DEFINITIONS */
+      .alphas {
+        color: #d8d2c3
+      }
+      .mods {
+        color: #aca693
+      }
+      .green {
+        color: #768e72
+      }
+      .red{
+        color: #c87e74
+      }
+      .legends {
+        color: #171718
       }
     </style>
 
     <title>Achille Hebert III</title>
   </head>
   <body>
-    <H3> just testing my memory </H3>
+    <H3>
+      <span class="alphas">alpha</span>
+      <span class="mods">mods</span>
+      <span class="green">green</span>
+      <span class="red">red</span>
+      <span class="legends">legends</span>
+      Black
+    </H3>
     <p> this is a test </p>
 
   </body>
