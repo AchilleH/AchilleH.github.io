@@ -1,14 +1,22 @@
 # AchilleH.github.io
 ---
 
-- HTML Notes
+- HTML
+- CSS
 
 ---
+
+
 ### HTML Notes
 - <div> tags have no inherent meaning, use for management
 - em is a relative font size that stacks
   - 2em would be 2x the em value set by font size(default is 16px)
 -
+
+### CSS
+- classes are defined by [.class{}]
+- can make tag specific class by [tag.class{}]
+
 
 ### Running notes
 - Markdown does not display from readme or html files
