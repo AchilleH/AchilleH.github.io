@@ -19,11 +19,17 @@
 - end all non bracket lines with semicolon
 - classes are defined by [.class{}]
 - can make tag specific class by [tag.class{}]
-
+- [#selector tag] will make it so all specified tags that descend from another tag with the specified selector will have certain properties(can only be applied once unlike a class)
+- IDs(the #) cannot be mixed and matched
+- multiple classes can be applied to a single element
+- IDs will override conflicting class rules
+-
 
 ### Website plan
  - l.vert. nav bar with links to other pages
  - top.horiz. nav bar for sub-section links
  - bold black font for name in left nav
  - pastel green for page titles
+
+ - home page
  -

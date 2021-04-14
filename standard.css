@@ -1,0 +1,81 @@
+/*
+GMK 9009 Colors
+alphas: L9 -> #d8d2c3
+Modifiers: U9 -> #aca693
+Green: 3B -> #768e72
+Red: 3C -> #c87e74
+Legends: CR -> #171718
+*/
+
+/*Variable Declaration*/
+:root{
+  --variation: #aca693;
+  --lightbase: #d8d2c3;
+  --accent: #768e72;
+  /* NAV Layout */
+  --navwidth: 250px; /*total width of nav bar, including border. Only useful for other content relative to the nav bar*/
+  --navborder: 15px;
+  --navpadding: 20px; /*make sure that padding is larger than border size*/
+  --navcontent: 195px; /*navwidth-2navpadding-navborder  height is vertical size of screen so only width matters here*/
+  --pfpwidth: 165px; /*navcontent-2navborder  border needs to fit within content*/
+
+}
+/*Global*/
+*{
+  margin: 0; /*maximize space usage of the whole page*/
+}
+
+*:focus{
+  outline: var(--accent) solid thin;
+}
+
+p {
+  color: #171718;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+#parent{
+  position: relative;
+}
+
+
+/*Nav Bar*/
+#pfp{
+  border: var(--navborder) solid var(--accent);
+  border-radius: 1129px;
+  width: var(--pfpwidth);
+  height: auto;
+}
+
+nav ul{
+  list-style: none; /*Rule to remove bullets from nav bar links*/
+}
+
+#leftbar{
+  position: fixed;
+  height: 100%;
+  width: var(--navcontent);
+  background: var(--lightbase);
+  border-right: var(--navborder) solid var(--variation);
+  padding: var(--navpadding);
+}
+
+.Nav_selected{
+
+}
+
+/*Heading*/
+#pagetitle{
+  position: sticky;
+  margin-left: var(--navwidth);
+  width: 100%;
+}
+
+#pageheading{
+  font-size: 8em;
+  font-family: sans-serif;
+}
+/*Main Content*/
