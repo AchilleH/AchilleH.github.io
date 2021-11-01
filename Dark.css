@@ -1,17 +1,18 @@
 /*
-GMK 9009 Colors
-alphas: L9 -> #d8d2c3
-Modifiers: U9 -> #aca693
-Green: 3B -> #768e72
-Red: 3C -> #c87e74
+GMK Metropolis Colors
+dark blue: #091F2C
+Cyan: #3CDBC0
+yellow: #F1BE48
+Red: #E03C31
 Legends: CR -> #171718
 */
 
 /*Variable Declaration*/
 :root{
-  --variation: #aca693;
-  --lightbase: #d8d2c3;
-  --accent: #768e72;
+  --variation: #F1BE48;
+  --lightbase: #091F2C;
+  --accent: #E03C31;
+  --text1: #3CDBC0;
 
   /* NAV Layout */
   --navborder: 15px;
@@ -32,17 +33,18 @@ Legends: CR -> #171718
 }
 
 p {
-  color: #171718;
+  color: var(--text1);
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: var(--lightbase);
 }
 
-#parent{
-  position: relative;
+/* Link Styling */
+a:visited, a:link{
+  color: var(--text1);
+  text-decoration: none;
 }
-
 
 /*Nav Bar*/
 #pfp{
@@ -52,6 +54,8 @@ body {
   height: auto;
   margin-left: var(--pfpmargin);
   margin-right: var(--pfpmargin);
+  margin-top: var(--pfpmargin);
+  margin-bottom: var(--pfpmargin);
 }
 
 #leftbar{
@@ -71,22 +75,31 @@ nav ul{
 nav ul li{
   padding-right: 30px;
   text-align: right;
+  color: var(--text1);
+}
+
+nav a:hover{
+  background-color: var(--accent);
+  width: 100%;
 }
 
 .Nav_selected{
 /*For the currently selected nav link*/
 background: var(--variation);
+color: var(--lightbase);
 }
 
 /*Heading*/
 #pagetitle{
-  position: sticky;
+  position: fixed;
   margin-left: var(--navtotal);
+  padding-left: 25px;
+  border-bottom: var(--navborder) solid var(--variation);
   width: 100%;
-}
+  }
 
 #pageheading{
   font-size: 8em;
-  font-family: sans-serif;
+  font-family: Verdana, sa`ns-serif;
 }
 /*Main Content*/
