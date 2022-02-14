@@ -17,7 +17,7 @@ Legends: CR -> #171718
   /* NAV Layout */
   --navborder: 15px;
   --navwidth: 300px; /*The total width of the inside of the navbar*/
-  --navtotal: 315px; /* to position other objects left of the nav */
+  --navtotal: 315px; /* to position other objects right of the nav */
 
   --pfpmargin: 15px;
   --pfpwidth: 240px; /*navwidth-2navborder-2pfpmargin  border needs to fit within content*/
@@ -40,12 +40,18 @@ body {
   background-color: var(--lightbase);
 }
 
+#parent{
+  position: relative;
+}
+
 /* Link Styling */
 a:visited, a:link{
   color: var(--text1);
   text-decoration: none;
 }
 
+
+/*-----------------------------------------*/
 /*Nav Bar*/
 #pfp{
   border: var(--navborder) solid var(--accent);
@@ -61,10 +67,11 @@ a:visited, a:link{
 #leftbar{
   position: fixed;
   height: 100%;
+  top: 0;
+  padding: 0px;
   width: var(--navwidth);
   background: var(--lightbase);
   border-right: var(--navborder) solid var(--variation);
-  padding: 0px;
 }
 
 nav ul{
@@ -78,28 +85,48 @@ nav ul li{
   color: var(--text1);
 }
 
-nav a:hover{
+nav li:hover{
   background-color: var(--accent);
-  width: 100%;
 }
 
-.Nav_selected{
+.Nav-selected{
 /*For the currently selected nav link*/
 background: var(--variation);
 color: var(--lightbase);
 }
 
+.Nav-selected:hover{
+background: var(--variation);
+color: var(--lightbase);
+}
+/*-----------------------------------------*/
+/*Content*/
+/*container for all things to the right of the nav bar*/
+#content{
+  position: relative;
+  margin-left: var(--navtotal)
+}
+
+/*-----------------------------------------*/
 /*Heading*/
 #pagetitle{
-  position: fixed;
-  margin-left: var(--navtotal);
+  position: fixed; /*want it fixed at the top*/
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--lightbase);
   padding-left: 25px;
   border-bottom: var(--navborder) solid var(--variation);
-  width: 100%;
-  }
+}
 
 #pageheading{
   font-size: 8em;
-  font-family: Verdana, sa`ns-serif;
+  font-family: Verdana, sans-serif;
 }
-/*Main Content*/
+/*-----------------------------------------*/
+/*main-content*/
+/*Container for main page article*/
+#main-content{
+  margin-top: 12%;
+  padding-left: 25px;
+}
